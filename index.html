@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+  <head>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+  <h1>Calculadora Simples</h1>
+
+  <form class="grid-container">
+
+    <div id="Visor" class="grid-item Visor">
+      <label id="screen1"></label>
+      <label id="op"></label>
+      <label id="screen2"></label>
+      <label>=</label>
+      <label id="resultado"></label>
+    </div>
+
+    
+    <button type="button" class="grid-item item-M disable" onclick="alert('Botão indisponível no momento')">MR</button>
+    <button type="button" class="grid-item item-M disable" onclick="alert('Botão indisponível no momento')">MS</button>
+    <button type="button" class="grid-item item-M disable" onclick="alert('Botão indisponível no momento')">MC</button>
+    <button type="button" class="grid-item item-M disable" onclick="alert('Botão indisponível no momento')">M+</button>
+    <button type="button" class="grid-item item-M disable" onclick="alert('Botão indisponível no momento')">M-</button>
+
+    <button type="button" class="grid-item item-op disable" onclick="alert('Botão indisponível no momento')">←</button>
+    <button type="button" class="grid-item item-op disable" onclick="alert('Botão indisponível no momento')">CE</button>
+    <button type="button" class="grid-item item-op enable" onclick="eraser();">C</button>
+    <button type="button" class="grid-item item-op2 disable" onclick="alert('Botão indisponível no momento')">±</button>
+    <button type="button" class="grid-item item-op2 disable" onclick="alert('Botão indisponível no momento')">√</button>
+
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);" >7</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">8</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">9</button>
+    <button type="button" class="grid-item item-op2 enable" onclick="div();">/</button>
+    <button type="button" class="grid-item item-op2 disable" onclick="alert('Botão indisponível no momento')">%</button>
+
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">4</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">5</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">6</button>
+    <button type="button" class="grid-item item-op2 enable" onclick="mult();">*</button>
+    <button type="button" class="grid-item item-op2 disable" onclick="alert('Botão indisponível no momento')">1/x</button>
+
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">1</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">2</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">3</button>
+    <button type="button" class="grid-item item-op2 enable" onclick="sub();">-</button>
+    
+    <button type="button" class="grid-item item-igual item-op2 enable" onclick="result();">=</button>
+    
+    <button type="button" class="grid-item item-zero item-num enable" onclick="number(innerHTML);">0</button>
+    <button type="button" class="grid-item item-num enable" onclick="number(innerHTML);">.</button>
+    <button type="button" class="grid-item item-op2 enable" onclick="soma();">+</button>
+
+
+  
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
